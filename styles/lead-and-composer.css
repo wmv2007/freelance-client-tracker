@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 1200px;
+  height: 820px;
+  box-sizing: border-box;
+  padding: 40px;
+  background: rgb(244, 245, 247);
+  color: rgb(14, 17, 22);
+  font-family: Plus Jakarta Sans, system-ui, sans-serif;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+section {
+  flex: 1 1 0px;
+  min-width: 0;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid rgb(228, 231, 236);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  gap: 18px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+span {
+  font-size: 13px;
+  color: rgb(86, 87, 89);
+}
+
+.new-lead {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.client-data {
+  display: flex;
+  gap: 14px;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sec-input {
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  font-size: 14px;
+  border: 1px solid rgb(201, 204, 210);
+  border-radius: 13px;
+  background: white;
+  color: rgb(14, 17, 22);
+}
+
+.platform-and-service {
+  display: flex;
+  gap: 14px;
+}
+
+.amt-status-date {
+  display: flex;
+  gap: 10px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notes-text {
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid rgb(213, 217, 224);
+  border-radius: 12px;
+  font-size: 14px;
+  color: rgb(14, 17, 22);
+  background: white;
+  resize: none;
+  font-family: inherit;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.save-button {
+  flex-grow: 1;
+  height: 48px;
+  border: 0px;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(47, 75, 255);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cancel-btn {
+  height: 48px;
+  padding: 0 22px;
+  background: transparent;
+  border: 1px solid rgb(201, 204, 210);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Email section */
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.email-btn {
+  height: 40px;
+  padding: 0px 14px;
+  border: 0px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgb(213, 217, 224);
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.active {
+  background-color: rgb(14, 17, 22);
+  color: white;
+}
+
+.email-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.send-btn {
+  display: flex;
+  gap: 15px;
+}
+
+.send-email {
+  flex-grow: 1;
+  height: 48px;
+  border: 0px;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(14, 17, 22);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.save-draft {
+  height: 48px;
+  padding: 0 22px;
+  background: transparent;
+  border: 1px solid rgb(201, 204, 210);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+}

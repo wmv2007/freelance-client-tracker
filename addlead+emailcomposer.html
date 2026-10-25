@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add lead and Email composer</title>
+  <link rel="stylesheet" href="styles/lead-and-composer.css">
+</head>
+
+<body>
+  <main>
+    <section class="add-lead">
+      <div class="head">
+        <h1>Add a lead</h1>
+        <span>Everything you save here feeds the dashboard and the email tools</span>
+      </div>
+      <form class="new-lead">
+        <div class="client-data">
+          <div class="sec">
+            <label for="name">Client name</label>
+            <input class="sec-input" type="name" placeholder="Business or person">
+          </div>
+          <div class="sec">
+            <label for="email">Client email</label>
+            <input class="sec-input" type="email" placeholder="name@example.com">
+          </div>
+        </div>
+        <div class="platform-and-service">
+          <div>
+            <label for="platform">Platform</label>
+            <select class="sec-input" name="platform" id="platform">
+              <option value="Fiverr">Fiverr</option>
+              <option value="Upwork">Upwork</option>
+              <option value="Social media">Social media</option>
+              <option value="Referal">Referal</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="services">Service wanted</label>
+            <select class="sec-input" name="service-wanted" id="service-wanted">
+              <option value="single-page website">Single-page website</option>
+              <option value="single-page wesite + JavaScript">Single-page wesite + JavaScript</option>
+              <option value="multi-page website">Multi-page website</option>
+              <option value="multi-page website + JavaScript">Multi-page website + JavaScript</option>
+              <option value="website redesign">Website redesign</option>
+              <option value="maintenance and updates">Maintenance and updates</option>
+            </select>
+          </div>
+        </div>
+        <div class="amt-status-date">
+          <div class="amt-container">
+            <label for="Quoted-amount">Quoted amount (USD)</label>
+            <input class="sec-input amount" type="number">
+          </div>
+          <div>
+            <label for="status">Status</label>
+            <select class="sec-input status" name="status" id="status">
+              <option value="new">New</option>
+              <option value="contacted">Contacted</option>
+              <option value="replied">Replied</option>
+              <option value="negotiating">Negotiating</option>
+              <option value="won">Won</option>
+              <option value="delivered">Delivered</option>
+              <option value="paid">Paid</option>
+              <option value="lost">Lost</option>
+            </select>
+          </div>
+          <div>
+            <label for="date">Follow-up date</label>
+            <input class="sec-input date" type="date">
+          </div>
+        </div>
+        <div class="notes">
+          <label for="notes">Notes</label>
+          <Textarea class="notes-text" rows="4" placeholder="What did they ask for? Any deadline?"></Textarea>
+        </div>
+        <div class="buttons">
+          <button class="save-button">save lead</button>
+          <button class="cancel-btn">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="email-composer">
+      <div class="head">
+        <h1>Send an email</h1>
+        <span>Pick a template, check the preview, send.</span>
+      </div>
+      <div class="btns">
+        <button class="email-btn active">Follow-up nudge</button>
+        <button class="email-btn">first reply</button>
+        <button class="email-btn">projects started</button>
+        <button class="email-btn">Delivered</button>
+        <button class="email-btn">Payment reminder</button>
+      </div>
+      <form class="email-details">
+        <label for="to">To</label>
+        <input class="sec-input" type="email" placeholder="name@example.com" value="kamau@example.com">
+        <label for="subject">Subject</label>
+        <input class="sec-input" type="text" value="Checking in on your website quote">
+        <label for="message">Message</label>
+        <textarea class="notes-text" name="subject" id="subject" rows="9" placeholder="message">
+Hi [client_name],
+
+I wanted to check in on the quote I sent for your website. Do you have any questions I can answer, or anything you would like adjusted?
+
+If you are ready to go ahead, reply to this email and I will send over the next steps and a start date.
+
+Best regards,
+Vincent Muriuki
+          </textarea>
+        <div class="send-btn">
+          <button class="send-email">
+            <svg data-dc-tpl="117" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path data-dc-tpl="118" d="M22 2L11 13"></path>
+              <path data-dc-tpl="119" d="M22 2l-7 20-4-9-9-4z"></path>
+            </svg>
+            Send email
+          </button>
+          <button class="save-draft">Save draft</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
