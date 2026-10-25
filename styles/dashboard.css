@@ -13,6 +13,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 24px;
+}
+
 body {
   margin: 0;
   background-color: var(--ground);
@@ -51,6 +59,11 @@ aside {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  align-self: flex-start;
+  overflow-y: auto;
 }
 
 .side-header {
@@ -211,10 +224,11 @@ h1 {
   background-color: rgb(47, 75, 255);
   color: white;
   font-weight: 800;
-  padding: 0 14px;
-  font-size: 13px;
+  padding: 14px;
+  font-size: 15px;
   border: none;
   border-radius: 13px;
+  text-decoration: none;
 }
 
 .stat-card {
@@ -272,6 +286,14 @@ h2 {
   flex-wrap: wrap;
   gap: 24px;
   align-items: flex-start;
+}
+
+.leads-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  flex: 2 1 520px;
 }
 
 .top-navigation {
@@ -389,6 +411,12 @@ nav button.active {
   font-weight: 700;
   padding: 5px 12px;
   border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.new {
+  color: rgb(25, 7, 183);
+  background: aqua;
 }
 
 .negotiating {
@@ -406,12 +434,12 @@ nav button.active {
   color: rgb(27, 58, 168);
 }
 
-.deposit {
+.deposit-paid {
   background: rgb(215, 240, 234);
   color: rgb(7, 88, 70);
 }
 
-.paid {
+.paid-in-full {
   background: rgb(10, 85, 40);
   color: rgb(255, 255, 255);
 }
@@ -445,13 +473,31 @@ nav button.active {
 }
 
 .side-panels {
-  flex: 1 1 340px;
+  flex: 1 1 310px;
   max-width: 460px;
   display: flex;
   flex-direction: column;
 }
 
-.followups {
+#followup-list,
+#deliver-list {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+#followup-list::-webkit-scrollbar,
+#deliver-list::-webkit-scrollbar{
+  width: 6px;
+}
+
+#followup-list::-webkit-scrollbar-thumb,
+#deliver-list::-webkit-scrollbar-thumb {
+  background: #c9ced6;
+  border-radius: 999px;
+}
+
+.followup {
   box-sizing: border-box;
   background: white;
   border: 1px solid rgb(228, 231, 236);
@@ -460,6 +506,12 @@ nav button.active {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.followups {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .followup-card {
@@ -548,7 +600,7 @@ nav button.active {
   font-weight: 700;
 }
 
-.deliver {
+#deliver-list {
   box-sizing: border-box;
   margin-top: 30px;
   background: white;
@@ -611,4 +663,9 @@ nav button.active {
 .day {
   color: #747475;
   font-size: 12px;
+}
+
+.deliver-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

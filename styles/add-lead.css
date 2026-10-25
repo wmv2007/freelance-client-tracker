@@ -1,3 +1,12 @@
+:root {
+  --ink: #0E1116;
+  --ground: #F4F5F7;
+  --card: #FFFFFF;
+  --line: #E4E7EC;
+  --muted: #5B6472;
+  --accent: #2F4BFF;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -136,9 +145,13 @@ button {
 
 .cancel-btn {
   height: 48px;
-  padding: 0 22px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   background: transparent;
   border: 1px solid rgb(201, 204, 210);
+  color: var(--ink);
   border-radius: 14px;
   font-size: 15px;
   font-weight: 600;
