@@ -90,12 +90,12 @@
         <h1>Send an email</h1>
         <span>Pick a template, check the preview, send.</span>
       </div>
-      <div class="btns">
-        <button class="email-btn active">Follow-up nudge</button>
-        <button class="email-btn">first reply</button>
-        <button class="email-btn">projects started</button>
-        <button class="email-btn">Delivered</button>
-        <button class="email-btn">Payment reminder</button>
+      <div class="btns" id="btns">
+        <button data-template="followup" id="followuup-btn" class="email-btn active">Follow-up nudge</button>
+        <button data-template="firstReply" id="first-reply-btn" class="email-btn">first reply</button>
+        <button data-template="started" id="project-started-btn" class="email-btn">projects started</button>
+        <button data-template="delivered" id="delivered-btn" class="email-btn">Delivered</button>
+        <button data-template="reminder" id="Payment-reminder-btn" class="email-btn">Payment reminder</button>
       </div>
       <form class="email-details">
         <label for="email-to">To</label>
